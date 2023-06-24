@@ -3,25 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --body-bg: #3c92aa;
+  --text-color: black;
+  --text-color-hover: white;
+  --navbar-bg: #B68049;
+  --navbar-item-bg: #c67171;
+  --navbar-item-bg-hover: #b64949;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --body-bg: rgb(55, 43, 75);
+    --background: var(--background-darkmode);
+    --text-color: white;
+    --text-color-hover: black;
+    --navbar-item-bg: #b64949;
+    --navbar-item-bg-hover: #c67171;
   }
 }
 
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--navbar-item-bg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navbar-item {
+  background-color: var(--navbar-item-bg);
+  color: var(--text-color);
+  flex-grow: 1;
+  flex-shrink: 3;
+  text-align: center;
+  margin: 1%;
+}
+
+.navbar-item-hover {
+  background-color: var(--navbar-item-bg-hover);
+  color: var(--text-color-hover);
+  flex-grow: 1;
+  flex-shrink: 3;
+  text-align: center;
+  align-items: stretch;
+  margin: 1%;
+  border: 10px, solid, var(--text-color);
+  border-radius: 5px;
+}
+
+.navbar-anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
