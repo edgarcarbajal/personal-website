@@ -1,3 +1,7 @@
+# Personal website repo  
+
+Personal Website about whatever, created using NEXT.js and deployed through Vercel. Feel free to clone this project to get a head-start on your own project; however, please credit me if you do so in your `README.md`.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
