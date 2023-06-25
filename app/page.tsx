@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <div>
+    <div className={'box-semitransparent'}>
       <h1>Home page</h1>
       <p>Some stuff goes here!</p>
     </div>

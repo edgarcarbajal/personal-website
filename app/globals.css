@@ -9,6 +9,9 @@
   --navbar-bg: #B68049;
   --navbar-item-bg: #c67171;
   --navbar-item-bg-hover: #b64949;
+  --text-color-special: #c46b97;
+  --bg-img: url(../public/oceanwave.jpg);
+  --box-color-semi: rgba(255, 255, 255, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,17 +20,36 @@
     --background: var(--background-darkmode);
     --text-color: white;
     --text-color-hover: black;
+    --text-color-special: #A94476;
+    --navbar-bg: #ad6227;
     --navbar-item-bg: #b64949;
     --navbar-item-bg-hover: #c67171;
+    --bg-img: url(../public/galaxy.jpg);
+    --box-color-semi: rgba(0, 0, 0, 0.5);
   }
 }
 
 
 body {
-  background-color: var(--body-bg);
   color: var(--text-color);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
+.main-content {
+  flex: 1;
+}
+
+.parallax {
+  height: 450px;
+  background-image: var(--bg-img);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+    
 .navbar {
   background-color: var(--navbar-item-bg);
   display: flex;
@@ -52,7 +74,9 @@ body {
   text-align: center;
   align-items: stretch;
   margin: 1%;
-  border: 10px, solid, var(--text-color);
+  border-style: double;
+  border-color: var(--text-color);
+  border-width: 2px;
   border-radius: 5px;
 }
 
@@ -60,4 +84,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--navbar-bg);
+  justify-content: center;
+}
+
+.header-container-child {
+  flex-grow: 1;
+  flex-shrink: 3;
+  text-align: center;
+}
+
+.header-container-image {
+  flex-grow: 1;
+  flex-shrink: 3;
+  align-items: flex-end;
+}
+
+.header-img {
+  align-items: flex-end;
+}
+
+
+.header-title {
+  text-shadow: 3px 3px 5px var(--text-color);
+  color: var(--text-color-special);
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+
+.footer-container-outer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--navbar-bg);
+  justify-content: center;
+}
+
+.box-semitransparent {
+  background-color: var(--box-color-semi);
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--text-color);
+  border-radius: 5px;
 }

@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer = (props: {id: string}) => {
     return (
-        <div className={'container bg-amber-700'}>
+        <div id={props.id} className={'footer-container-outer'}>
             <h6>{'Copyright®: Edgar Carbajal'}</h6>
         </div>
     );

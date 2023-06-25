@@ -1,14 +1,11 @@
-const Header = (props: {title: string}) => {
+const Header = (props: {id: string, title: string}) => {
     return (
-        <div className={'container bg-amber-700'}>
+        <div id={props.id} className={'header-container'}>
             <a href={'.'}>
-                <img 
-                    src={'./images/galaxyPNG.png'}
-                    height={400}
-                    width={400}
-                />
+                <br/>
+                    <h1 className={'header-title header-container-child'}>{props.title}</h1>
+                <br/>
             </a>
-            <h1>{props.title}</h1>
         </div>
     );
 }

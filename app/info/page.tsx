@@ -1,6 +1,6 @@
 const InfoPage = () => {
     return (
-        <div>
+        <div className={'box-semitransparent'}>
             <h1>{'Hello! this is the info(about) page'}</h1>
             <p>{'Random content goes here...'}</p>
         </div>

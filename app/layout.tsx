@@ -11,15 +11,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>{'The best website around!'}</title>
-      </head>
-      <body>
-        <Header title={'Personal Website (仮)'}/>
-        <Navbar/>
-        {children}
-        <Footer/>
-      </body>
+        <head>
+            <title>{'The best website around!'}</title>
+        </head>
+        <body className='parallax'>
+            <Header id={'top'} title={'Personal Website (仮)'}/>
+            <Navbar/>
+            <br></br>
+            <main className={'main-content'}>
+                {children}
+            </main>
+            <br></br>
+            <Footer id={'bottom'}/>
+        </body>
     </html>
   )
 }
