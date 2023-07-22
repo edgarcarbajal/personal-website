@@ -119,10 +119,7 @@ body {
 
 
 .footer-container-outer {
-  display: flex;
-  flex-direction: row;
   background-color: var(--navbar-bg);
-  justify-content: center;
 }
 
 .box-semitransparent {
