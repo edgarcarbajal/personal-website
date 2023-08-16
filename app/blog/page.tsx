@@ -19,10 +19,10 @@ const BlogPage = () => {
             <br></br>
             <HorizBar middleInsertStr={'Posts'}/>
 
-            {reversedContent.map(e => {
+            {reversedContent.map((e, index) => {
                 const date = new Date(e.date)
                 return (
-                    <div>
+                    <div key={index}>
                         <br></br>
                         <h1 className={'text-2xl font-mono'}>
                             {e.title}
