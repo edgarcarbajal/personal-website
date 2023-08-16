@@ -15,9 +15,9 @@ const NavbarButton = (props:
 
     return (
         <div 
-                className={hoverButtonStyle}
-                onMouseEnter={changeButtonStyleHover}
-                onMouseLeave={changeButtonStyleHover}
+            className={hoverButtonStyle}
+            onMouseEnter={changeButtonStyleHover}
+            onMouseLeave={changeButtonStyleHover}
         >
             <a 
                 href={props.hrefLink ? props.hrefLink : '#'}

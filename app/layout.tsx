@@ -17,11 +17,9 @@ export default function RootLayout({
         <body className='parallax'>
             <Header id={'top'} title={'Personal Website (仮)'}/>
             <Navbar/>
-            <br></br>
             <main className={'main-content'}>
                 {children}
             </main>
-            <br></br>
             <Footer id={'bottom'}/>
         </body>
     </html>
