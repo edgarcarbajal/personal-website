@@ -21,6 +21,7 @@ const BlogPage = () => {
 
             {reversedContent.map((e, index) => {
                 const date = new Date(e.date)
+                let imgKey = e.imageSize as keyof typeof imageSizes
                 return (
                     <div key={index}>
                         <br></br>
@@ -33,8 +34,8 @@ const BlogPage = () => {
                             <Image
                                 src={e.image}
                                 alt={'Blog Post Image'}
-                                width={imageSizes[e.imageSize].width}
-                                height={imageSizes[e.imageSize].height}
+                                width={imageSizes[imgKey].width}
+                                height={imageSizes[imgKey].height}
                             /> : ''}
                             <p className={'text-class'}>{e.textPre}</p>
                         </GlassCard>
