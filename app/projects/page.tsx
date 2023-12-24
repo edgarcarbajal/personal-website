@@ -7,7 +7,6 @@ import projectContent from "../../public/project-content.json"
 const ProjectPage = () => {
     const {content} = projectContent
     const reversedContent = content.map(e=>e).reverse()
-
     return (
         <div className={'m-8'}>
             <h1 className={'text-2xl font-mono'}>
@@ -21,35 +20,35 @@ const ProjectPage = () => {
                 </p>
             </GlassCard>
 
-        <br></br>
-        <HorizBar middleInsertStr={'Posts'}/>
+            <br></br>
+            <HorizBar middleInsertStr={'Posts'}/>
 
-        {reversedContent.map((e, index) => {
-            const date = new Date(e.date)
-            let imgKey = e.imageSize as keyof typeof imageSizes
-            return (
-                <div key={index}>
-                    <br></br>
-                    <h1 className={'text-2xl font-mono'}>
-                        {e.title}
-                    </h1>
-                    <h2>{date.toLocaleString()}</h2>
-                    <GlassCard>
-                        {e.image !== 'none' ? 
-                        // Any new posts with images, choose a size that matches closely to its max resolution for best quality
-                        // Choose medium/small for side image in desktop, or large/xtra-large etc... for big image above the text (like in mobile) for desktop.
-                        <Image
-                            className={'grow'}
-                            src={e.image}
-                            alt={'Project Post Image'}
-                            width={imageSizes[imgKey].width}
-                            height={imageSizes[imgKey].height}
-                        /> : ''}
-                        <p className={'text-class'}>{e.textPre}</p>
-                    </GlassCard>
-                </div>
-            )
-        })}
+            {reversedContent.map((e, index) => {
+                const date = new Date(e.date)
+                let imgKey = e.imageSize as keyof typeof imageSizes
+                return (
+                    <div key={index}>
+                        <br></br>
+                        <h1 className={'text-2xl font-mono'}>
+                            {e.title}
+                        </h1>
+                        <h2>{date.toLocaleString()}</h2>
+                        <GlassCard>
+                            {e.image !== 'none' ? 
+                            // Any new posts with images, choose a size that matches closely to its max resolution for best quality
+                            // Choose medium/small for side image in desktop, or large/xtra-large etc... for big image above the text (like in mobile) for desktop.
+                            <Image
+                                className={'grow'}
+                                src={e.image}
+                                alt={'Project Post Image'}
+                                width={imageSizes[imgKey].width}
+                                height={imageSizes[imgKey].height}
+                            /> : ''}
+                            <p className={'text-class'}>{e.textPre}</p>
+                        </GlassCard>
+                    </div>
+                )
+            })}
         </div>
     );
 };
