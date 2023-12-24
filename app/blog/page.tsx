@@ -17,7 +17,7 @@ const BlogPage = () => {
                     {'Welcome to the blog page!\n\nThis page will have posts about random things that I decide to write about or test for this website. '}
                     {'Since I am not really much of a blogger, you wont see this page updated that often. There might be a few posts dedicated to some website component testing or two. '}
                     {'This might change in the future as I spend more time on the website but who knows.\n\nPlease enjoy the random posts here!'}
-                    </p>
+                </p>
             </GlassCard>
             
             <br></br>
