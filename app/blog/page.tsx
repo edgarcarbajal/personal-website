@@ -13,11 +13,15 @@ const BlogPage = () => {
                 {'Stuff for a blog, or things I find interesting'}
             </h1>
             <GlassCard>
+<<<<<<< HEAD
                 <p className={'text-class'}>
                     {'Welcome to the blog page!\n\nThis page will have posts about random things that I decide to write about or test for this website. '}
                     {'Since I am not really much of a blogger, you wont see this page updated that often. There might be a few posts dedicated to some website component testing or two. '}
                     {'This might change in the future as I spend more time on the website but who knows.\n\nPlease enjoy the random posts here!'}
                 </p>
+=======
+                <p className={'text-class'}>{'Here is some placeholder text for the intro to the blog page.\n\n月光と日差しの美しさ'}</p>
+>>>>>>> b4b490ff81f80770d3a978d74cc3933a6f251c94
             </GlassCard>
             
             <br></br>
@@ -35,10 +39,14 @@ const BlogPage = () => {
                         <h2>{date.toLocaleString()}</h2>
                         <GlassCard>
                             {e.image !== 'none' ? 
+<<<<<<< HEAD
                             // Any new blogposts with images, choose a size that matches closely to its max resolution for best quality
                             // Choose medium/small for side image in desktop, or large/xtra-large etc... for big image above the text (like in mobile) for desktop.
                             <Image
                                 className={'grow'}
+=======
+                            <Image
+>>>>>>> b4b490ff81f80770d3a978d74cc3933a6f251c94
                                 src={e.image}
                                 alt={'Blog Post Image'}
                                 width={imageSizes[imgKey].width}
