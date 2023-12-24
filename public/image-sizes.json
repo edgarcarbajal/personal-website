@@ -4,18 +4,12 @@
         "height": 50
     }, 
     "medium": {
-<<<<<<< HEAD
         "width": 250,
         "height": 250
-=======
-        "width": 200,
-        "height": 200
->>>>>>> b4b490ff81f80770d3a978d74cc3933a6f251c94
     }, 
     "large": {
         "width": 500,
         "height": 500
-<<<<<<< HEAD
     },
     "xtra-large": {
         "width": 1000,
@@ -24,7 +18,5 @@
     "wumbo": {
         "width": 2000,
         "height": 2000
-=======
->>>>>>> b4b490ff81f80770d3a978d74cc3933a6f251c94
     }
 }

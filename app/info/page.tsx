@@ -4,7 +4,6 @@ const InfoPage = () => {
     return (
         <div className={'m-8'}>
             <h1 className={'text-2xl font-mono'}>
-<<<<<<< HEAD
                 {'About Me:'}
             </h1>
             <GlassCard>
@@ -13,12 +12,6 @@ const InfoPage = () => {
                     {'and I am majoring in Computer Science, with a minor in Applied Mathamatics.\n\n'}
                     {'Below this section will be some other subsections showing of any experience, skills, and hobbies I have. (not yet implemented)'}
                 </p>
-=======
-                {'Hello! info page is here'}
-            </h1>
-            <GlassCard>
-                <p>{'Testing!!!!'}</p>
->>>>>>> b4b490ff81f80770d3a978d74cc3933a6f251c94
             </GlassCard>
         </div>
     );
