@@ -134,3 +134,11 @@ body {
   white-space: pre-wrap;
   margin: 10px
 }
+
+
+.hover-button {
+  @apply row-start-1 p-4 rounded transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-100 hover:bg-violet-400 duration-300;
+}
+.simple-button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full;
+}

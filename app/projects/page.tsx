@@ -7,6 +7,7 @@ import projectContent from "../../public/project-content.json"
 const ProjectPage = () => {
     const {content} = projectContent
     const reversedContent = content.map(e=>e).reverse()
+
     return (
         <div className={'m-8'}>
             <h1 className={'text-2xl font-mono'}>
@@ -15,16 +16,19 @@ const ProjectPage = () => {
             <GlassCard>
                 <p className={'text-class'}>
                     {'Welcome to the project page! Here I will have some dedicated sections (similar to the Blog page) of any projects I have done. '}
-                    {'I will give a breif description of the project (ie: what it is, what does it do), what technologies I used, why I chose to work on it, and show some screenshots/video of the project working! At the end I will include a direct link to any source code.\n\n'}
+                    {'I will give a brief description of the project (ie: what it is, what does it do), what technologies I used, why I chose to work on it, and show some screenshots/video of the project working! At the end I will include a direct link to any source code.\n\n'}
                     {'Anyways, I hope you enjoy browsing around here!'}
                 </p>
             </GlassCard>
 
             <br></br>
-            <HorizBar middleInsertStr={'Posts'}/>
+            <HorizBar middleInsertStr={'Projects'}/>
+            
 
             {reversedContent.map((e, index) => {
                 const date = new Date(e.date)
+                const svgStyle = e.image.search('.svg') != -1 ? 'grow dark:invert' : 'grow'
+
                 let imgKey = e.imageSize as keyof typeof imageSizes
                 return (
                     <div key={index}>
@@ -38,13 +42,20 @@ const ProjectPage = () => {
                             // Any new posts with images, choose a size that matches closely to its max resolution for best quality
                             // Choose medium/small for side image in desktop, or large/xtra-large etc... for big image above the text (like in mobile) for desktop.
                             <Image
-                                className={'grow'}
+                                className={svgStyle}
                                 src={e.image}
                                 alt={'Project Post Image'}
                                 width={imageSizes[imgKey].width}
                                 height={imageSizes[imgKey].height}
                             /> : ''}
                             <p className={'text-class'}>{e.textPre}</p>
+                            {e.url?.length > 0 && 
+                                <button className="simple-button">
+                                    <a href={e.url}>
+                                        Link to Repo
+                                    </a>
+                                </button>
+                            }
                         </GlassCard>
                     </div>
                 )
