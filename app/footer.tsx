@@ -6,7 +6,7 @@ const Footer = (props: {id: string}) => {
             id={props.id} 
             className={'conatiner grid grid-cols-2 gap-2 footer-container-outer justify-items-center'}
         >
-            <div className={'row-start-1 p-4 rounded transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-100 hover:bg-violet-400 duration-300'}>
+            <div className={'hover-button'}>
                 <a href={'https://github.com/edgarcarbajal'} target={'_blank'}>
                     <Image
                         src={'/github-mark.svg'}
@@ -17,7 +17,7 @@ const Footer = (props: {id: string}) => {
                 </a>
             </div>
 
-            <div className={'row-start-1 p-4 rounded transition ease-in-out delay-150 bg-transparent hover:-translate-y-1 hover:scale-100 hover:bg-violet-400 duration-300'}>
+            <div className={'hover-button'}>
                 <a href={'https://linkedin.com/in/edgar-carbajal-382432244'} target={'_blank'}>
                     <Image
                         src={'/linkedin-icon.svg'}

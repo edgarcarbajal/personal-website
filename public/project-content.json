@@ -5,7 +5,48 @@
             "image": "none",
             "imageSize": "none",
             "title": "Test Post on Project Page",
-            "textPre": "Hello! Welcome to my first test post on the project page. This is directly lifted from the blog page code. I will most likely stick with the same format here as well, maybe a few tweaks here and there to differentiate it from the Blog page, but I am still not sure yet. We will see later on how the page will turn out.\n\nFor now this is a place holder post."
+            "textPre": "Hello! Welcome to my first test post on the project page. This is directly lifted from the blog page code. I will most likely stick with the same format here as well, maybe a few tweaks here and there to differentiate it from the Blog page, but I am still not sure yet. We will see later on how the page will turn out.\n\nFor now this is a place holder post.",
+            "url": ""
+        },
+        {
+            "date": 1715637211396,
+            "image": "/gramschmitt.gif",
+            "imageSize": "large",
+            "title": "Gram Schmitt Calculator",
+            "textPre": "A project written in C++ where I try to implement the Gram Schmitt Process of finding the orthonormal set of vectors in R^n space.\n\nI did this project right after my Linear Algebra class, where I did mostly hand calculations, so I wanted to make a calculator for one of the more tedious calculations to do in that class.\nThis was before I learned about floating point errors, so there not much mitigations in place for those in this program! Check it out by clicking the link!",
+            "url": "https://github.com/edgarcarbajal/gran_schimit"
+        },
+        {
+            "date": 1715637211396,
+            "image": "/cramers.png",
+            "imageSize": "large",
+            "title": "Cramer's Rule Calculator",
+            "textPre": "A project written in C++ where I try to implement Cramer's Rule Process to find the solution to the linear system Ax = b.\n\nI also did this project right after my Linear Algebra class, where I did mostly hand calculations, so I wanted to make a calculator of solving a linear system without using the functions that already existed in calculators like TI-83.\n\n I needed a few basic matrix properties without using a library because I wanted to challenge myself in seeing if I could implement the algorithm from scratch just using C++ std library so it might be a little more overengineered that what might have been needed.\n\nThis was before I learned about floating point errors, so there not much mitigations in place for those in this program! Check it out by clicking the link!",
+            "url": "https://github.com/edgarcarbajal/cramers_rule"
+        },
+        {
+            "date": 1715637211396,
+            "image": "/websiteRef.png",
+            "imageSize": "large",
+            "title": "Personal Website",
+            "textPre": "The repo for this website that runs in React & Next.JS! I was inspired to make this website after a few of my collegues in an internship I had in the summer were making their own websites in their free time, and looked really nice.\nI made this one though mostly out of curiosity and trying to apply what I was learning at the internship (React & Typsescript mostly), but I am not too attached to the website (as you can probably tell from the very few updates I make to it).\n\nIf you are interested in how this website it setup, click below to see the repo!",
+            "url": "https://github.com/edgarcarbajal/personal_website"
+        },
+        {
+            "date": 1715637211396,
+            "image": "/cs466img.webp",
+            "imageSize": "large",
+            "title": "CSCI 466 - Databases: Semester Group Project",
+            "textPre": "The repo for the group project for the CSCI 466 (Databases) class at NIU. It contains the database specifications, and PHP code that implements a Karaoke service that runs on NIU webserver.\n\nYou can see the service in action through the link in the README, but sometimes the server will go down for maintenance. I also cannot guarantee it will stay up forever, as NIU will eventually clear out old student accounts.\n\nIf you are interested in seeing more, click below to see the repo.",
+            "url": "https://github.com/edgarcarbajal/cs466proj"
+        },
+        {
+            "date": 1715637211396,
+            "image": "/cs467img.svg",
+            "imageSize": "large",
+            "title": "CSCI 467 - Intro to Software Engineering: Semester Group Project",
+            "textPre": "This is the latest(5/13/2024) project that I have been apart of. A group project for CSCI 467 class that was all about the Software Engineering process (although we did not do all aspects due to time constraints like evolution/testing).\n\nWe were given just a few user requirements in text format, and we were supposed to design, and implement the requirements to create a software system that met the rquirements.\n\nWe used React for the frontend, and Express.js for the backend. There is no server this code is currently hosted right now, so if you want to see it in action, please follow the steps in the README to see how to install.\nA video on the basics of how it works might be uploaded and posted in the README in the future.",
+            "url": "https://github.com/edgarcarbajal/cs467proj"
         }
     ]
 }
