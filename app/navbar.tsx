@@ -5,15 +5,15 @@ const Navbar = () => {
         <nav className={'navbar'}>
             <NavbarButton 
                 buttonText={'About'} 
-                hrefLink={'./info'}
+                hrefLink={'/info'}
             />
             <NavbarButton 
                 buttonText={'Work / Projects'}
-                hrefLink={'./projects'}
+                hrefLink={'/projects'}
             />
             <NavbarButton 
                 buttonText={'Blog'}
-                hrefLink={'./blog'}
+                hrefLink={'/blog'}
             />
         </nav>
     );
