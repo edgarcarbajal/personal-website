@@ -8,8 +8,8 @@ export default function Home() {
       </h1>
       <GlassCard>
         <p>
-          {'Welcome to my personal website!! This is the home page which is just filled with some snippets of what you can see in the different pages '}
-          {'of my website. Please click on the navbar to see more! If you want to learn more about me that is not on the website, click on the Github/LinkedIn icons below.'}
+          {'Welcome to my personal website!! This is the home page which I plan to just fill in with random images of the other pages, or maybe a custom logo for my website in the future. '}
+          {'Please click on the navbar to see more! If you want to learn more about me that is not on the website, click on the Github/LinkedIn icons below.'}
         </p>
       </GlassCard>
       <br></br>

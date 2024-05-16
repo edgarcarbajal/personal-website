@@ -1,33 +1,25 @@
-import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavbarButton = (props: 
     {
         buttonText: string
-        hrefLink?: string
+        hrefLink: string
     }) => {
-    const [hoverButtonStyle, setHoverButtonStyle] = useState('navbar-item');
 
-    const changeButtonStyleHover = () => {
-        hoverButtonStyle === 'navbar-item' ? 
-            setHoverButtonStyle('navbar-item-hover'):
-            setHoverButtonStyle('navbar-item');
-    };
-
-    return (
-        <div 
-            className={hoverButtonStyle}
-            onMouseEnter={changeButtonStyleHover}
-            onMouseLeave={changeButtonStyleHover}
-        >
-            <a 
-                href={props.hrefLink ? props.hrefLink : '#'}
-                className={'navbar-anchor'}
+    const pathname = usePathname();
+    const isActiveLink = props.hrefLink == pathname;
+    
+    return(
+        <div className="m-4">
+            <Link
+                className={isActiveLink ? 'navbar-button-selected' : 'navbar-button'}
+                href={props.hrefLink}
             >
                 {props.buttonText}
-            </a>
+            </Link>
         </div>
     );
-
 };
 
 export default NavbarButton;
